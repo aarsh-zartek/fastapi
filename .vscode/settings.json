@@ -1,0 +1,32 @@
+{
+
+    "python.analysis.indexing": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "fastapi",
+            "depth": 4,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "sqlalchemy",
+            "depth": 4,
+            // "includeAllSymbols": true
+        },
+        {
+            "name": "pydantic",
+            "depth": 4
+        },
+    ],
+
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=C0111", //pylint-missing-docstring
+        "--disable=C0114", //pylint-missing-module-docstring
+        "--disable=C0115", //pylint-missing-class-docstring
+        "--disable=C0116", //pylint-missing-function-docstring
+        "--disable=C0103", //pylint-invalid-name
+        "--disable=W0622", //pylint-redefined-builtin
+
+    ]
+}
